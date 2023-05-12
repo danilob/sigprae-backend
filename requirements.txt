@@ -12,3 +12,4 @@ python-decouple==3.5
 six==1.16.0
 validate-docbr==1.10.0
 django-filter
+django-cors-headers

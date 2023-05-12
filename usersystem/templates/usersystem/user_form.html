@@ -1,0 +1,16 @@
+<style>
+    .form-control{
+        color: red;
+    }
+</style>
+
+<a href="{% url 'user:user_list' %}">Listar Usuários</a>
+
+
+<form action="{% url 'user:user_form_test' %}" method="post">
+    {% csrf_token %}
+    <table>
+        {{ form.as_table }}
+    </table>
+    <input type="submit" value="Submit">
+</form>

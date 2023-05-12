@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Muli, sans-serif;
+    display: flex;
+    padding: 20px;
+    background: white;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    padding: 100px;
+}
+
+.container_one {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(180deg, #F3EFD5 0%, #E4C9A3 100%);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 15px 0px 0px 15px;
+}
+
+.container_one .logo {
+    margin: auto;
+}
+
+.container_one .logo img {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+}
+
+.container_one .logo h3 {
+    text-align: center;
+}
+
+.container_child {
+    display: block;
+    width: 400px;
+    height: 500px;
+    background-color: #F8F8F8;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 15px 15px 0px;
+}
+
+.container_child .options {
+    display: flex;
+}
+
+.container_child .options p {
+    padding: 10px;
+}
+
+.container_child .options a {
+    color: black;
+    text-decoration: none;
+}
+
+.container_child .options #login {
+    color: gray;
+}
+
+.container_child .options #login:hover {
+    color: black;
+}
+
+.line hr {
+    width: 380px;
+    height: 1px;
+    background-color: rgb(180, 180, 180);
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+}
+
+.place_nav span {
+    display: block;
+    background: #A04410;
+    width: 90px;
+    height: 2px;
+    margin-left: 75px;
+}
+
+.container_child .form {
+    display: grid;
+    border: none;
+    margin: 30px 64px 10px 64px;
+    height: 400px;
+    align-content: center;
+}
+
+.container_child .form h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.container_child .form input {
+    margin-bottom: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 250px;
+    font-size: 15px;
+}
+
+.container_child .form .profile_birth {
+    display: flex;
+}
+
+.container_child .form #profile {
+    width: 122px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.container_child .form .birth_date #birth {
+    width: 120px;
+    padding: 6.7px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.container_child .form button {
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: black;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-family: Muli, sans-serif;
+    font-size: 15px;
+}
+
+.container_child .form .button {
+    display: flex;
+    justify-content: center;
+}
+
+.container_child button:hover {
+    cursor: pointer;
+    background: #323232;
+}
+
+.container_child .terms_and_conditions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-size: 0.8rem;
+}
+
+.container_child .terms_and_conditions span {
+    color: blue;
+}
+
+.container_child .terms_and_conditions span:hover {
+    cursor: pointer;
+}
+
+.container_child .terms_and_conditions {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 30px;
+}
+
+.container_child .terms_conditions_check {
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    width: 20px;
+}
+
+.container_child .terms_conditions_check #checkbox:hover {
+    cursor: pointer;
+}
+
+.container_child .terms_and_conditions_line {
+    margin-left: 10px;
+}

@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'register_style.css'%}">
+    <title>Login - Sigprae</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container_one">
+            <div class="logo">
+                <img src="{% static 'images/logo.png' %}" alt="logo">  
+                <img src="{% static 'images/uespi_logo.png' %}" alt="uespi_logo">
+                <h3>Universidade<br>Estadual do Piauí</h3>
+            </div>
+        </div>
+
+        <div class="container_child">
+
+            <div class="options">
+                <p><a href="{% url 'user:render_login' %}" id="login">Entrar</a></p>
+                <p><a href="{% url 'user:render_register' %}" id="register">Criar conta</a></p>
+            </div>
+
+            <div class="line">
+                <hr>
+            </div>
+
+            <div class="place_nav">
+                <span></span>
+            </div>
+            
+            <form class="form">
+                <h2>Crie uma conta</h2>
+                <div>
+                    <input type="text" name="full name" id="full_name" placeholder="Nome Completo" required>
+                </div>
+                
+                <div class="profile_birth">
+                    <div>
+                        <select name="perfil" id="profile">
+                            <option value="Professor">Perfil</option>
+                            <option value="Professor">Professor</option>
+                            <option value="Professor">Aluno</option>
+                            <option value="Professor">Administrativo</option>
+                            <option value="Professor">Comunidade</option>
+                        </select>
+                    </div>
+
+                    <div class="birth_date">
+                        <input type="date" id="birth">
+                    </div>
+                </div>
+
+                <div>
+                    <input type="text" name="cpf" id="cpf" placeholder="CPF" required>
+                </div>
+
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+
+                <div>
+                    <input type="password" name="senha" id="senha" placeholder="Senha" required>
+                </div>
+
+                <div>
+                    <input type="password" name="confirmar_senha" id="confirmar_senha" placeholder="Confirme a senha" required>
+                </div>
+
+                <div class="terms_and_conditions">
+                    <div class="terms_conditions_check">
+                        <input type="checkbox" name="termos e condicoes" id="checkbox" required>
+                    </div>
+                    <div class="terms_and_conditions_line">
+                        <a>Concordo com os <span>termos e condições.</span></a>
+                    </div>
+                </div>
+                   
+                <div class="button">
+                    <button type="button" name="Entrar" href="#">Entrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

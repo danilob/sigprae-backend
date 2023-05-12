@@ -1,0 +1,21 @@
+
+<a href="{% url 'user:user_form_test' %}">Cadastrar Usuário</a>
+<br>
+{% if not users %}
+<b>Não existem usuários cadastrados.</b>
+{% else %}
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Perfil</th>
+            <th>Criação</th>
+        </tr>
+    {% for one_user in users %}
+        <tr>
+            <td>{{ one_user.full_name|upper }}</td>
+            <td>{{ one_user.get_profile_display|upper }}</td>
+            <td>{{ one_user.date_joined|date:"d/m/Y H:i:s" }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+{% endif %}

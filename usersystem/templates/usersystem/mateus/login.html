@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'login_style.css' %}">
+    <title>Login - Sigprae</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container_one">
+            <div class="logo">
+                <img src="{% static 'images/logo.png' %}" alt="logo">  
+                <img src="{% static 'images/uespi_logo.png' %}" alt="logo_uespi">
+                <h3>Universidade<br>Estadual do Piauí</h3>
+            </div>
+        </div>
+
+        <div class="container_child">
+
+            <div class="options">
+                <p><a href="{% url 'user:render_login' %}" id="login">Entrar</a></p>
+                <p><a href="{% url 'user:render_register' %}" id="register">Criar conta</a></p>
+            </div>
+
+            <div class="line">
+                <hr>
+            </div>
+
+            <div class="place_nav">
+                <span></span>
+            </div>
+            
+            <form class="form">
+                <h2>Entrar no sistema</h2>
+                <div>
+                    <input type="user" name="usuario" id="user" placeholder="Usuário" required>
+                </div>
+                
+                <div>
+                    <input type="password" name="senha" id="senha" placeholder="Senha" required>
+                </div>
+                   
+                <div class="button">
+                    <button type="button" name="Entrar" href="#">Entrar</button>
+                </div>
+            </form>
+            <div class="recover">
+                <img src="{% static 'images/Key.svg' %}" alt="Key" id="key">
+                <div class="recover_user_pass">
+                    <a id="recover_access">Esqueci meu usuário ou senha</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

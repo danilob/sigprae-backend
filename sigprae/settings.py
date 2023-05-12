@@ -98,7 +98,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'sigprae.wsgi.app'
+WSGI_APPLICATION = 'poll.wsgi.application'
 
 
 # Database

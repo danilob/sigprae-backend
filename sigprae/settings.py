@@ -14,7 +14,7 @@ from decouple import config
 from pathlib import Path
 import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -42,9 +42,7 @@ INSTALLED_APPS = [
 
     #third-apps
     'rest_framework',
-    'corsheaders',
-    'whitenoise.runserver_nostatic',
-    
+    'corsheaders',    
     #my-apps
     #'usersystem',
     #'termsandconditions',
@@ -74,7 +72,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     #'termsandconditions.middleware.TermsAndConditionsRedirectMiddleware',
 ]
 

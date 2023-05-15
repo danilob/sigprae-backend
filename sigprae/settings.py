@@ -97,7 +97,7 @@ WSGI_APPLICATION = 'sigprae.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-if os.getenv('USE_SQLITE',default=True, cast_to=bool):
+if os.getenv('USE_SQLITE',default=True):
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',

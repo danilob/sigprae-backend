@@ -16,12 +16,16 @@ from .serializers import *
 from apps.interestarea.models import InterestArea
 from rest_framework.filters import SearchFilter
 from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework import filters
+from django_filters.rest_framework import DjangoFilterBackend
 
 class SubjectListCreateAPIView(ListCreateAPIView):
     queryset = Subject.objects.all()
     # permission_classes = (IsAuthenticated, )
     serializer_class = SubjectSerializer
     lookup_field = 'uuid'  # Don't use Subject.id!
+    filter_backends = [filters.SearchFilter]
+    search_fields = ['description']
 
 class SubjectRetrieveUpdateDestroyAPIView(RetrieveUpdateDestroyAPIView):
     queryset = Subject.objects.all()
